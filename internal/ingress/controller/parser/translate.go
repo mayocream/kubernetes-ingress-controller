@@ -37,7 +37,24 @@ func fromIngressV1beta1(log logrus.FieldLogger, ingressList []*networkingv1beta1
 			allDefaultBackends = append(allDefaultBackends, *ingress)
 		}
 
+		// this essentially iterates over the same content twice. we need to collect SNI information for two different
+		// purposes: result.SecretNameToSNIs collects Secret->SNI hostname info across ALL Ingresses, routeSNIs
+		// collects hostnames for a single Ingress only. This is necessary to support cert+SNI objects, which are
+		// decoupled from any one route, and route SNI match info, which is tied to a specific route. We determine this
+		// based on the actual rule hostname, but need to check that the hostname is available, in the edge case where
+		// someone has created an Ingress whose rule hostname set is a proper superset of the Ingress's TLS hostname
+		// set, ignoring some complications introduced by wildcards. maybe.
 		result.SecretNameToSNIs.addFromIngressV1beta1TLS(ingressSpec.TLS, ingress.Namespace)
+		//var routeSNIs []*string
+		hasSNI := false
+		for i := range ingressSpec.TLS {
+			if len(ingressSpec.TLS[i].Hosts) > 0 {
+				hasSNI = true
+			}
+			//	for _, hostname := range ingressSpec.TLS[i].Hosts {
+			//		routeSNIs = append(routeSNIs, &hostname)
+			//	}
+		}
 
 		for i, rule := range ingressSpec.Rules {
 			host := rule.Host
@@ -83,7 +100,9 @@ func fromIngressV1beta1(log logrus.FieldLogger, ingressList []*networkingv1beta1
 					// support (less common over time, but still a reality in regions with a large number of older
 					// devices with EOL OSes). A vendor-specific override can address either case, though may need to
 					// consider future changes to SNI matching in the Kong proxy core.
-					r.SNIs = kong.StringSlice(host)
+					if hasSNI {
+						r.SNIs = kong.StringSlice(host)
+					}
 				}
 
 				serviceName := ingress.Namespace + "." +
