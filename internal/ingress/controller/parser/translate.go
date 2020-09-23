@@ -37,17 +37,7 @@ func fromIngressV1beta1(log logrus.FieldLogger, ingressList []*networkingv1beta1
 			allDefaultBackends = append(allDefaultBackends, *ingress)
 		}
 
-		// this essentially iterates over the same content twice. we need to collect SNI information for two different
-		// purposes: result.SecretNameToSNIs collects Secret->SNI hostname info across ALL Ingresses, routeSNIs
-		// collects hostnames for a single Ingress only. This is necessary to support cert+SNI objects, which are
-		// decoupled from any one route, and route SNI match info, which is tied to a specific route
 		result.SecretNameToSNIs.addFromIngressV1beta1TLS(ingressSpec.TLS, ingress.Namespace)
-		var routeSNIs []*string
-		for i := range ingressSpec.TLS {
-			for _, hostname := range ingressSpec.TLS[i].Hosts {
-				routeSNIs = append(routeSNIs, &hostname)
-			}
-		}
 
 		for i, rule := range ingressSpec.Rules {
 			host := rule.Host
@@ -81,16 +71,19 @@ func fromIngressV1beta1(log logrus.FieldLogger, ingressList []*networkingv1beta1
 						PreserveHost:  kong.Bool(true),
 						Protocols:     kong.StringSlice("http", "https"),
 						RegexPriority: kong.Int(0),
-						// TODO maybe. this forcibly adds SNI match criteria for the TLS hostnames in an Ingress rule
-						// to the Kong route. That's relationship arguably does exist for Ingresses, but isn't enforced
-						// for Kong routes. However, cases where users need to override this and add SNIs not found in
-						// the cert attached to a route should be quite uncommon. If needed, we can add an override via
-						// vendor-specific annotation.
-						SNIs: routeSNIs,
 					},
 				}
 				if host != "" {
 					r.Hosts = kong.StringSlice(host)
+					// TODO maybe. this forcibly adds SNI match criteria for the TLS hostnames in an Ingress rule
+					// to the Kong route. That criteria arguably should exist for any Ingress rules with a hostname,
+					// and adding it automatically is useful for the current common (only?) use of this criteria in the
+					// Kong proxy, indicating when the proxy should request an mTLS client cert. It may create issues
+					// if users require a different SNI match criteria (unlikely) or support clients without SNI
+					// support (less common over time, but still a reality in regions with a large number of older
+					// devices with EOL OSes). A vendor-specific override can address either case, though may need to
+					// consider future changes to SNI matching in the Kong proxy core.
+					r.SNIs = kong.StringSlice(host)
 				}
 
 				serviceName := ingress.Namespace + "." +
