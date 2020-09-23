@@ -2449,7 +2449,7 @@ func TestParserSecret(t *testing.T) {
 
 func TestParserSNI(t *testing.T) {
 	assert := assert.New(t)
-	t.Run("route includes SNI when TLS info present", func(t *testing.T) {
+	t.Run("route includes SNI when TLS info present, but not for wildcard hostnames", func(t *testing.T) {
 		ingresses := []*networkingv1beta1.Ingress{
 			{
 				ObjectMeta: metav1.ObjectMeta{
@@ -2463,12 +2463,28 @@ func TestParserSNI(t *testing.T) {
 					TLS: []networkingv1beta1.IngressTLS{
 						{
 							SecretName: "secret1",
-							Hosts:      []string{"example.com"},
+							Hosts:      []string{"example.com", "*.example.com"},
 						},
 					},
 					Rules: []networkingv1beta1.IngressRule{
 						{
 							Host: "example.com",
+							IngressRuleValue: networkingv1beta1.IngressRuleValue{
+								HTTP: &networkingv1beta1.HTTPIngressRuleValue{
+									Paths: []networkingv1beta1.HTTPIngressPath{
+										{
+											Path: "/",
+											Backend: networkingv1beta1.IngressBackend{
+												ServiceName: "foo-svc",
+												ServicePort: intstr.FromInt(80),
+											},
+										},
+									},
+								},
+							},
+						},
+						{
+							Host: "*.example.com",
 							IngressRuleValue: networkingv1beta1.IngressRuleValue{
 								HTTP: &networkingv1beta1.HTTPIngressRuleValue{
 									Paths: []networkingv1beta1.HTTPIngressPath{
@@ -2518,6 +2534,16 @@ func TestParserSNI(t *testing.T) {
 			Paths:         kong.StringSlice("/"),
 			Protocols:     kong.StringSlice("http", "https"),
 		}, state.Services[0].Routes[0].Route)
+		assert.Equal(kong.Route{
+			Name:          kong.String("default.foo.10"),
+			StripPath:     kong.Bool(false),
+			RegexPriority: kong.Int(0),
+			Hosts:         kong.StringSlice("*.example.com"),
+			SNIs:          nil,
+			PreserveHost:  kong.Bool(true),
+			Paths:         kong.StringSlice("/"),
+			Protocols:     kong.StringSlice("http", "https"),
+		}, state.Services[0].Routes[1].Route)
 	})
 	t.Run("route does not include SNI when TLS info absent", func(t *testing.T) {
 		ingresses := []*networkingv1beta1.Ingress{

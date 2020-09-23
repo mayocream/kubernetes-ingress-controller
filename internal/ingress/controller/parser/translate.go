@@ -91,7 +91,8 @@ func fromIngressV1beta1(log logrus.FieldLogger, ingressList []*networkingv1beta1
 					},
 				}
 				if host != "" {
-					r.Hosts = kong.StringSlice(host)
+					hosts := kong.StringSlice(host)
+					r.Hosts = hosts
 					// TODO maybe. this forcibly adds SNI match criteria for the TLS hostnames in an Ingress rule
 					// to the Kong route. That criteria arguably should exist for any Ingress rules with a hostname,
 					// and adding it automatically is useful for the current common (only?) use of this criteria in the
@@ -99,9 +100,18 @@ func fromIngressV1beta1(log logrus.FieldLogger, ingressList []*networkingv1beta1
 					// if users require a different SNI match criteria (unlikely) or support clients without SNI
 					// support (less common over time, but still a reality in regions with a large number of older
 					// devices with EOL OSes). A vendor-specific override can address either case, though may need to
-					// consider future changes to SNI matching in the Kong proxy core.
+					// consider future changes to SNI matching in the Kong proxy core. Wildcard hostnames present a
+					// challenge, because you might reasonably want to add them (and the Ingress spec doesn't care
+					// about SNI, so it allows them by virtue of allowing wildcard hostnames), but the proxy doesn't
+					// let you configure them.
 					if hasSNI {
-						r.SNIs = kong.StringSlice(host)
+						var snis []*string
+						for _, hostname := range hosts {
+							if !strings.Contains(*hostname, "*") {
+								snis = append(snis, hostname)
+							}
+						}
+						r.SNIs = snis
 					}
 				}
 
