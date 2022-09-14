@@ -14,7 +14,7 @@ require (
 	github.com/go-logr/logr v1.2.3
 	github.com/google/uuid v1.3.0
 	github.com/kong/deck v1.14.0
-	github.com/kong/go-kong v0.31.1
+	github.com/kong/go-kong v0.32.0
 	github.com/kong/kubernetes-testing-framework v0.21.0
 	github.com/lithammer/dedent v1.1.0
 	github.com/miekg/dns v1.1.50
@@ -109,6 +109,7 @@ require (
 	github.com/inconshreveable/mousetrap v1.0.0 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
+	github.com/kong/semver/v4 v4.0.1 // indirect
 	github.com/kr/pretty v0.3.0 // indirect
 	github.com/liggitt/tabwriter v0.0.0-20181228230101-89fcab3d43de // indirect
 	github.com/lufia/plan9stats v0.0.0-20211012122336-39d0f177ccd0 // indirect
