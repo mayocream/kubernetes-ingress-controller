@@ -15,7 +15,7 @@ require (
 	github.com/google/uuid v1.3.0
 	github.com/kong/deck v1.16.1
 	github.com/kong/go-kong v0.33.0
-	github.com/kong/kubernetes-testing-framework v0.24.0
+	github.com/kong/kubernetes-testing-framework v0.24.1
 	github.com/lithammer/dedent v1.1.0
 	github.com/miekg/dns v1.1.50
 	github.com/mitchellh/mapstructure v1.5.0
@@ -127,7 +127,7 @@ require (
 	github.com/power-devops/perfstat v0.0.0-20210106213030-5aafc221ea8c // indirect
 	github.com/prometheus/client_model v0.3.0 // indirect
 	github.com/prometheus/procfs v0.8.0 // indirect
-	github.com/russross/blackfriday v1.6.0 // indirect
+	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/sergi/go-diff v1.2.0 // indirect
 	github.com/shirou/gopsutil/v3 v3.22.10 // indirect
 	github.com/ssgelm/cookiejarparser v1.0.1 // indirect
@@ -161,11 +161,11 @@ require (
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	k8s.io/cli-runtime v0.25.4 // indirect
+	k8s.io/cli-runtime v0.26.0 // indirect
 	k8s.io/klog/v2 v2.80.1 // indirect
 	k8s.io/kube-openapi v0.0.0-20221012153701-172d655c2280 // indirect
-	k8s.io/kubectl v0.25.3 // indirect
-	k8s.io/utils v0.0.0-20221107191617-1a15be271d1d // indirect
+	k8s.io/kubectl v0.26.0 // indirect
+	k8s.io/utils v0.0.0-20221128185143-99ec85e7a448 // indirect
 	sigs.k8s.io/json v0.0.0-20220713155537-f223a00ba0e2 // indirect
 	sigs.k8s.io/kind v0.17.0 // indirect
 	sigs.k8s.io/structured-merge-diff/v4 v4.2.3 // indirect
