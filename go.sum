@@ -485,8 +485,8 @@ github.com/kisielk/gotool v1.0.0/go.mod h1:XhKaO+MFFWcvkIS/tQcRk01m1F5IRFswLeQ+o
 github.com/klauspost/compress v1.13.6/go.mod h1:/3/Vjq9QcHkK5uEr5lBEmyoZ1iFhe47etQ6QUkpK6sk=
 github.com/kong/deck v1.17.2 h1:uWmXj1k3T4DGYr3N542Hsz4iIWYQWqcBGZ903KakLD8=
 github.com/kong/deck v1.17.2/go.mod h1:gIj+4WuAzVhmUsBTYiG1pFD0F2QRqlANHIH/fs9+71o=
-github.com/kong/go-kong v0.35.0 h1:N+J1hZrRNL+92YDe/42M5fI5bjZSOHePq1p7OHWiUSU=
-github.com/kong/go-kong v0.35.0/go.mod h1:4xT4uMMGcysH3qOqm458JyIbDBUw8MVAQIi+DP8ggtc=
+github.com/kong/go-kong v0.36.0 h1:jCONQFQqYHkTz+VnHOkWMMUEawYYLgvrlL5g+fGLUQQ=
+github.com/kong/go-kong v0.36.0/go.mod h1:4xT4uMMGcysH3qOqm458JyIbDBUw8MVAQIi+DP8ggtc=
 github.com/kong/kubernetes-testing-framework v0.26.0 h1:rusiPJVMUdgpKm08/1hGcCRkQYY2Ct2iQ66TukLwUIM=
 github.com/kong/kubernetes-testing-framework v0.26.0/go.mod h1:clm6sSUBFEXGBA427BN8AEBdF0VCNeVmG3O4uPjF84g=
 github.com/kong/semver/v4 v4.0.1 h1:DIcNR8W3gfx0KabFBADPalxxsp+q/5COwIFkkhrFQ2Y=
