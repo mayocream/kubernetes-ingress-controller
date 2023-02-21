@@ -13,7 +13,7 @@ require (
 	github.com/ghodss/yaml v1.0.0
 	github.com/go-logr/logr v1.2.3
 	github.com/google/uuid v1.3.0
-	github.com/kong/deck v1.18.1
+	github.com/kong/deck v1.19.0
 	github.com/kong/go-kong v0.38.0
 	github.com/kong/kubernetes-testing-framework v0.29.0
 	github.com/lithammer/dedent v1.1.0
@@ -130,7 +130,7 @@ require (
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/samber/lo v1.37.0 // indirect
 	github.com/sergi/go-diff v1.2.0 // indirect
-	github.com/shirou/gopsutil/v3 v3.22.12 // indirect
+	github.com/shirou/gopsutil/v3 v3.23.1 // indirect
 	github.com/ssgelm/cookiejarparser v1.0.1 // indirect
 	github.com/tidwall/match v1.1.1 // indirect
 	github.com/tidwall/pretty v1.2.0 // indirect
