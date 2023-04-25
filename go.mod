@@ -14,7 +14,7 @@ require (
 	github.com/go-logr/logr v1.2.4
 	github.com/google/uuid v1.3.0
 	github.com/kong/deck v1.19.1
-	github.com/kong/go-kong v0.39.2
+	github.com/kong/go-kong v0.41.0
 	github.com/kong/kubernetes-testing-framework v0.30.1
 	github.com/lithammer/dedent v1.1.0
 	github.com/miekg/dns v1.1.53
@@ -98,7 +98,7 @@ require (
 	github.com/hashicorp/go-retryablehttp v0.7.2 // indirect
 	github.com/hashicorp/golang-lru v0.5.4 // indirect
 	github.com/hexops/gotextdiff v1.0.3 // indirect
-	github.com/huandu/xstrings v1.3.2 // indirect
+	github.com/huandu/xstrings v1.4.0 // indirect
 	github.com/imdario/mergo v0.3.14 // indirect
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
