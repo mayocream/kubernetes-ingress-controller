@@ -17,7 +17,7 @@ require (
 	github.com/kong/go-kong v0.41.0
 	github.com/kong/kubernetes-testing-framework v0.30.1
 	github.com/lithammer/dedent v1.1.0
-	github.com/miekg/dns v1.1.53
+	github.com/miekg/dns v1.1.54
 	github.com/mitchellh/mapstructure v1.5.0
 	github.com/prometheus/client_golang v1.15.0
 	github.com/prometheus/common v0.42.0
