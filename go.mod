@@ -31,7 +31,7 @@ require (
 	google.golang.org/api v0.123.0
 	google.golang.org/genproto v0.0.0-20230410155749-daa745c078e1
 	k8s.io/api v0.27.2
-	k8s.io/apiextensions-apiserver v0.27.1
+	k8s.io/apiextensions-apiserver v0.27.2
 	k8s.io/apimachinery v0.27.2
 	k8s.io/client-go v0.27.2
 	k8s.io/component-base v0.27.2
