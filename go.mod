@@ -15,7 +15,7 @@ require (
 	github.com/google/uuid v1.3.1
 	github.com/kong/deck v1.27.1
 	github.com/kong/go-kong v0.47.0
-	github.com/kong/kubernetes-testing-framework v0.39.1
+	github.com/kong/kubernetes-testing-framework v0.40.0
 	github.com/lithammer/dedent v1.1.0
 	github.com/miekg/dns v1.1.56
 	github.com/mitchellh/mapstructure v1.5.0
@@ -64,7 +64,7 @@ require (
 	github.com/docker/docker v24.0.6+incompatible // indirect
 	github.com/docker/go-connections v0.4.0 // indirect
 	github.com/docker/go-units v0.5.0 // indirect
-	github.com/emicklei/go-restful/v3 v3.10.2 // indirect
+	github.com/emicklei/go-restful/v3 v3.11.0 // indirect
 	github.com/evanphx/json-patch v5.6.0+incompatible // indirect
 	github.com/evanphx/json-patch/v5 v5.6.0 // indirect
 	github.com/exponent-io/jsonpath v0.0.0-20151013193312-d6023ce2651d // indirect
@@ -145,6 +145,7 @@ require (
 	github.com/yusufpapurcu/wmi v1.2.3 // indirect
 	go.opencensus.io v0.24.0 // indirect
 	go.starlark.net v0.0.0-20230525235612-a134d8f9ddca // indirect
+	go4.org/netipx v0.0.0-20230728184502-ec4c8b891b28 // indirect
 	golang.org/x/crypto v0.14.0 // indirect
 	golang.org/x/exp v0.0.0-20230905200255-921286631fa9 // indirect
 	golang.org/x/mod v0.12.0 // indirect
