@@ -5,7 +5,7 @@ go 1.18
 replace github.com/imdario/mergo v0.3.12 => github.com/Kong/mergo v0.3.13
 
 require (
-	cloud.google.com/go/container v1.27.1
+	cloud.google.com/go/container v1.28.0
 	github.com/Masterminds/sprig v2.22.0+incompatible
 	github.com/avast/retry-go/v4 v4.5.0
 	github.com/blang/semver/v4 v4.0.0
