@@ -109,7 +109,7 @@ jobs:
           - 'postgres'
     steps:
       - name: setup golang
-        uses: actions/setup-go@v4
+        uses: actions/setup-go@v5
         with:
           go-version: '^1.18'
       - name: cache go modules
@@ -142,7 +142,7 @@ jobs:
           - 'postgres'
     steps:
       - name: setup golang
-        uses: actions/setup-go@v4
+        uses: actions/setup-go@v5
         with:
           go-version: '^1.18'
       - name: cache go modules
