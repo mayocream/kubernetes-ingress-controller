@@ -32,8 +32,8 @@ require (
 	k8s.io/api v0.29.0
 	k8s.io/apiextensions-apiserver v0.28.4
 	k8s.io/apimachinery v0.29.0
-	k8s.io/client-go v0.28.4
-	k8s.io/component-base v0.28.4
+	k8s.io/client-go v0.29.0
+	k8s.io/component-base v0.29.0
 	knative.dev/networking v0.0.0-20220302134042-e8b2eb995165
 	knative.dev/pkg v0.0.0-20220301181942-2fdd5f232e77
 	sigs.k8s.io/controller-runtime v0.16.3
@@ -88,6 +88,7 @@ require (
 	github.com/google/shlex v0.0.0-20191202100458-e7afc7fbc510 // indirect
 	github.com/googleapis/enterprise-certificate-proxy v0.3.2 // indirect
 	github.com/googleapis/gax-go/v2 v2.12.0 // indirect
+	github.com/gorilla/websocket v1.5.0 // indirect
 	github.com/gregjones/httpcache v0.0.0-20180305231024-9cad4c3443a7 // indirect
 	github.com/hashicorp/go-cleanhttp v0.5.2 // indirect
 	github.com/hashicorp/go-hclog v1.5.0 // indirect
