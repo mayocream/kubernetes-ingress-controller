@@ -499,8 +499,8 @@ github.com/klauspost/compress v1.13.6/go.mod h1:/3/Vjq9QcHkK5uEr5lBEmyoZ1iFhe47e
 github.com/kong/deck v1.29.3-0.20231114000742-27bb40ad93d6 h1:gvpVZ6nNRITEF0jsu2yKamiqAKdspQ3/g3CrqmXFdAs=
 github.com/kong/go-database-reconciler v1.1.0 h1:USCdsAj/7eh9sOOfbnvsOe4jw5k4+FSTD3okcTLIVqQ=
 github.com/kong/go-database-reconciler v1.1.0/go.mod h1:p8NvafqBSuMR9YNCOZ24aIeeajc145+biXpAaMExvpI=
-github.com/kong/go-kong v0.49.0 h1:QtO0TtVPYQXjBJ/MNptvyodRNwubbtIkoNhQkh17Q1g=
-github.com/kong/go-kong v0.49.0/go.mod h1:xDf1RfkaE/rAwNE1fS3XniFj/d2JmkEER2S9NDY12Yw=
+github.com/kong/go-kong v0.50.0 h1:HDKn3o/02AH4cURvjzS09gqC4bHZDva5H8JJwYi7T1U=
+github.com/kong/go-kong v0.50.0/go.mod h1:xDf1RfkaE/rAwNE1fS3XniFj/d2JmkEER2S9NDY12Yw=
 github.com/kong/kubernetes-testing-framework v0.43.0 h1:Pjh4NMlwApFqi9RPW5NPHD3mOCA62pHKLLX4pWnHGXw=
 github.com/kong/kubernetes-testing-framework v0.43.0/go.mod h1:O8Zw6cvWKOS5oVUqh8SEFCX83VywKPx35kleUbeCAwc=
 github.com/kong/semver/v4 v4.0.1 h1:DIcNR8W3gfx0KabFBADPalxxsp+q/5COwIFkkhrFQ2Y=
