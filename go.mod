@@ -14,7 +14,7 @@ require (
 	github.com/go-logr/logr v1.4.1
 	github.com/google/uuid v1.5.0
 	github.com/kong/go-kong v0.50.0
-	github.com/kong/kubernetes-testing-framework v0.43.0
+	github.com/kong/kubernetes-testing-framework v0.44.0
 	github.com/lithammer/dedent v1.1.0
 	github.com/miekg/dns v1.1.58
 	github.com/mitchellh/mapstructure v1.5.0
@@ -101,7 +101,7 @@ require (
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
-	github.com/kong/go-database-reconciler v1.1.0 // indirect
+	github.com/kong/go-database-reconciler v1.2.0 // indirect
 	github.com/kong/semver/v4 v4.0.1 // indirect
 	github.com/liggitt/tabwriter v0.0.0-20181228230101-89fcab3d43de // indirect
 	github.com/lufia/plan9stats v0.0.0-20211012122336-39d0f177ccd0 // indirect
@@ -128,7 +128,7 @@ require (
 	github.com/prometheus/procfs v0.12.0 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/samber/lo v1.39.0 // indirect
-	github.com/shirou/gopsutil/v3 v3.23.10 // indirect
+	github.com/shirou/gopsutil/v3 v3.23.12 // indirect
 	github.com/shoenig/go-m1cpu v0.1.6 // indirect
 	github.com/ssgelm/cookiejarparser v1.0.1 // indirect
 	github.com/tidwall/match v1.1.1 // indirect
@@ -168,10 +168,10 @@ require (
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	k8s.io/cli-runtime v0.29.0 // indirect
+	k8s.io/cli-runtime v0.29.1 // indirect
 	k8s.io/klog/v2 v2.110.1 // indirect
 	k8s.io/kube-openapi v0.0.0-20231010175941-2dd684a91f00 // indirect
-	k8s.io/kubectl v0.29.0 // indirect
+	k8s.io/kubectl v0.29.1 // indirect
 	k8s.io/utils v0.0.0-20230726121419-3b25d923346b // indirect
 	sigs.k8s.io/json v0.0.0-20221116044647-bc3834ca7abd // indirect
 	sigs.k8s.io/kind v0.20.0 // indirect
