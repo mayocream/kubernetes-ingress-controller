@@ -5,7 +5,7 @@ go 1.18
 replace github.com/imdario/mergo v0.3.12 => github.com/Kong/mergo v0.3.13
 
 require (
-	cloud.google.com/go/container v1.29.0
+	cloud.google.com/go/container v1.30.0
 	github.com/Masterminds/sprig v2.22.0+incompatible
 	github.com/avast/retry-go/v4 v4.5.1
 	github.com/blang/semver/v4 v4.0.0
@@ -28,7 +28,7 @@ require (
 	github.com/tidwall/gjson v1.17.0
 	golang.org/x/net v0.20.0
 	google.golang.org/api v0.157.0
-	google.golang.org/genproto v0.0.0-20240102182953-50ed04b92917
+	google.golang.org/genproto v0.0.0-20240116215550-a9fa1716bcac
 	k8s.io/api v0.29.1
 	k8s.io/apiextensions-apiserver v0.29.1
 	k8s.io/apimachinery v0.29.1
@@ -160,8 +160,8 @@ require (
 	golang.org/x/tools v0.17.0 // indirect
 	gomodules.xyz/jsonpatch/v2 v2.4.0 // indirect
 	google.golang.org/appengine v1.6.8 // indirect
-	google.golang.org/genproto/googleapis/api v0.0.0-20240102182953-50ed04b92917 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20240116215550-a9fa1716bcac // indirect
+	google.golang.org/genproto/googleapis/api v0.0.0-20240122161410-6c6643bf1457 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20240122161410-6c6643bf1457 // indirect
 	google.golang.org/grpc v1.60.1 // indirect
 	google.golang.org/protobuf v1.32.0 // indirect
 	gopkg.in/evanphx/json-patch.v5 v5.6.0 // indirect
