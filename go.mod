@@ -27,7 +27,7 @@ require (
 	github.com/stretchr/testify v1.8.4
 	github.com/tidwall/gjson v1.17.0
 	golang.org/x/net v0.20.0
-	google.golang.org/api v0.159.0
+	google.golang.org/api v0.160.0
 	google.golang.org/genproto v0.0.0-20240116215550-a9fa1716bcac
 	k8s.io/api v0.29.1
 	k8s.io/apiextensions-apiserver v0.29.1
