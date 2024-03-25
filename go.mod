@@ -15,7 +15,7 @@ require (
 	github.com/google/uuid v1.6.0
 	github.com/kong/deck v1.36.1
 	github.com/kong/go-kong v0.51.1-0.20240125175037-0c077f5b9ac7
-	github.com/kong/kubernetes-testing-framework v0.45.0
+	github.com/kong/kubernetes-testing-framework v0.46.0
 	github.com/lithammer/dedent v1.1.0
 	github.com/miekg/dns v1.1.58
 	github.com/mitchellh/mapstructure v1.5.0
@@ -31,7 +31,7 @@ require (
 	google.golang.org/api v0.171.0
 	google.golang.org/genproto v0.0.0-20240213162025-012b6fc9bca9
 	k8s.io/api v0.29.3
-	k8s.io/apiextensions-apiserver v0.29.2
+	k8s.io/apiextensions-apiserver v0.29.3
 	k8s.io/apimachinery v0.29.3
 	k8s.io/client-go v0.29.3
 	k8s.io/component-base v0.29.3
@@ -58,7 +58,7 @@ require (
 	github.com/chai2010/gettext-go v1.0.2 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
 	github.com/distribution/reference v0.5.0 // indirect
-	github.com/docker/docker v25.0.2+incompatible // indirect
+	github.com/docker/docker v26.0.0+incompatible // indirect
 	github.com/docker/go-connections v0.4.0 // indirect
 	github.com/docker/go-units v0.5.0 // indirect
 	github.com/emicklei/go-restful/v3 v3.11.0 // indirect
@@ -112,6 +112,7 @@ require (
 	github.com/mitchellh/copystructure v1.2.0 // indirect
 	github.com/mitchellh/go-wordwrap v1.0.1 // indirect
 	github.com/mitchellh/reflectwalk v1.0.2 // indirect
+	github.com/moby/docker-image-spec v1.3.1 // indirect
 	github.com/moby/spdystream v0.2.0 // indirect
 	github.com/moby/term v0.0.0-20221205130635-1aeaba878587 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
@@ -169,12 +170,12 @@ require (
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	k8s.io/cli-runtime v0.29.1 // indirect
+	k8s.io/cli-runtime v0.29.3 // indirect
 	k8s.io/klog/v2 v2.110.1 // indirect
 	k8s.io/kube-openapi v0.0.0-20240103051144-eec4567ac022 // indirect
-	k8s.io/kubectl v0.29.1 // indirect
+	k8s.io/kubectl v0.29.3 // indirect
 	k8s.io/utils v0.0.0-20240102154912-e7106e64919e // indirect
 	sigs.k8s.io/json v0.0.0-20221116044647-bc3834ca7abd // indirect
-	sigs.k8s.io/kind v0.21.0 // indirect
+	sigs.k8s.io/kind v0.22.0 // indirect
 	sigs.k8s.io/structured-merge-diff/v4 v4.4.1 // indirect
 )
