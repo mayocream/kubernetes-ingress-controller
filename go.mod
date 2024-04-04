@@ -27,7 +27,7 @@ require (
 	github.com/spf13/pflag v1.0.5
 	github.com/stretchr/testify v1.9.0
 	github.com/tidwall/gjson v1.17.1
-	golang.org/x/net v0.22.0
+	golang.org/x/net v0.23.0
 	google.golang.org/api v0.172.0
 	google.golang.org/genproto v0.0.0-20240213162025-012b6fc9bca9
 	k8s.io/api v0.29.3
