@@ -28,7 +28,7 @@ require (
 	github.com/stretchr/testify v1.9.0
 	github.com/tidwall/gjson v1.17.1
 	golang.org/x/net v0.25.0
-	google.golang.org/api v0.178.0
+	google.golang.org/api v0.179.0
 	google.golang.org/genproto v0.0.0-20240401170217-c3f982113cda
 	k8s.io/api v0.30.0
 	k8s.io/apiextensions-apiserver v0.30.0
@@ -45,7 +45,7 @@ require (
 )
 
 require (
-	cloud.google.com/go/auth v0.3.0 // indirect
+	cloud.google.com/go/auth v0.4.1 // indirect
 	cloud.google.com/go/auth/oauth2adapt v0.2.2 // indirect
 	cloud.google.com/go/compute/metadata v0.3.0 // indirect
 	dario.cat/mergo v1.0.0 // indirect
