@@ -19,7 +19,7 @@ require (
 	github.com/lithammer/dedent v1.1.0
 	github.com/miekg/dns v1.1.61
 	github.com/mitchellh/mapstructure v1.5.0
-	github.com/prometheus/client_golang v1.19.1
+	github.com/prometheus/client_golang v1.20.0
 	github.com/prometheus/common v0.55.0
 	github.com/sethvargo/go-password v0.3.1
 	github.com/sirupsen/logrus v1.9.3
@@ -55,7 +55,7 @@ require (
 	github.com/Masterminds/semver v1.5.0 // indirect
 	github.com/Microsoft/go-winio v0.6.0 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
-	github.com/cespare/xxhash/v2 v2.2.0 // indirect
+	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/chai2010/gettext-go v1.0.2 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
 	github.com/distribution/reference v0.5.0 // indirect
@@ -102,6 +102,7 @@ require (
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
+	github.com/klauspost/compress v1.17.9 // indirect
 	github.com/kong/go-database-reconciler v1.12.1 // indirect
 	github.com/kong/semver/v4 v4.0.1 // indirect
 	github.com/liggitt/tabwriter v0.0.0-20181228230101-89fcab3d43de // indirect
