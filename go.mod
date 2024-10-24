@@ -30,7 +30,7 @@ require (
 	golang.org/x/net v0.30.0
 	google.golang.org/api v0.203.0
 	google.golang.org/genproto v0.0.0-20241015192408-796eee8c2d53
-	k8s.io/api v0.31.1
+	k8s.io/api v0.31.2
 	k8s.io/apiextensions-apiserver v0.31.1
 	k8s.io/apimachinery v0.31.2
 	k8s.io/client-go v0.31.1
