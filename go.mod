@@ -33,8 +33,8 @@ require (
 	k8s.io/api v0.32.1
 	k8s.io/apiextensions-apiserver v0.31.1
 	k8s.io/apimachinery v0.32.1
-	k8s.io/client-go v0.32.0
-	k8s.io/component-base v0.32.0
+	k8s.io/client-go v0.32.1
+	k8s.io/component-base v0.32.1
 	knative.dev/networking v0.0.0-20220302134042-e8b2eb995165
 	knative.dev/pkg v0.0.0-20220301181942-2fdd5f232e77
 	sigs.k8s.io/controller-runtime v0.19.0
