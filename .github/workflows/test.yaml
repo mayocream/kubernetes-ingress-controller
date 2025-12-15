@@ -101,7 +101,7 @@ jobs:
       run: make test.unit
 
     - name: collect test coverage
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v6
       with:
         name: coverage
         path: coverage.unit.out
@@ -141,7 +141,7 @@ jobs:
         KONG_LICENSE_DATA: ${{ steps.license.outputs.license }}
 
     - name: collect test coverage
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v6
       with:
         name: coverage
         path: coverage.enterprisepostgres.out
@@ -185,7 +185,7 @@ jobs:
         TEST_KONG_PULL_PASSWORD: ${{ secrets.GHA_KONG_ORG_DOCKERHUB_PUBLIC_TOKEN }}
 
     - name: collect test coverage
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v6
       with:
         name: coverage
         path: coverage.enterprisepostgres.out
@@ -216,7 +216,7 @@ jobs:
       run: make test.integration.dbless
 
     - name: collect test coverage
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v6
       with:
         name: coverage
         path: coverage.dbless.out
@@ -247,7 +247,7 @@ jobs:
       run: make test.integration.postgres
 
     - name: collect test coverage
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v6
       with:
         name: coverage
         path: coverage.postgres.out
@@ -280,7 +280,7 @@ jobs:
         KONG_CONTROLLER_FEATURE_GATES: "Gateway=true,CombinedRoutes=true"
 
     - name: collect test coverage
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v6
       with:
         name: coverage
         path: coverage.featuregates.out
