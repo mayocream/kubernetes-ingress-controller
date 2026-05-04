@@ -1,6 +1,7 @@
 module github.com/kong/kubernetes-ingress-controller/v2
 
-go 1.18
+go 1.23.5
+
 toolchain go1.24.1
 
 replace github.com/imdario/mergo v0.3.12 => github.com/Kong/mergo v0.3.13
@@ -24,8 +25,8 @@ require (
 	github.com/prometheus/common v0.63.0
 	github.com/sethvargo/go-password v0.3.1
 	github.com/sirupsen/logrus v1.9.3
-	github.com/spf13/cobra v1.9.1
-	github.com/spf13/pflag v1.0.6
+	github.com/spf13/cobra v1.10.2
+	github.com/spf13/pflag v1.0.9
 	github.com/stretchr/testify v1.10.0
 	github.com/tidwall/gjson v1.18.0
 	golang.org/x/net v0.37.0
