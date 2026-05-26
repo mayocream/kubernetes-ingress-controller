@@ -534,8 +534,8 @@ github.com/kisielk/gotool v1.0.0/go.mod h1:XhKaO+MFFWcvkIS/tQcRk01m1F5IRFswLeQ+o
 github.com/klauspost/compress v1.13.6/go.mod h1:/3/Vjq9QcHkK5uEr5lBEmyoZ1iFhe47etQ6QUkpK6sk=
 github.com/klauspost/compress v1.18.0 h1:c/Cqfb0r+Yi+JtIEq73FWXVkRonBlf0CRNYc8Zttxdo=
 github.com/klauspost/compress v1.18.0/go.mod h1:2Pp+KzxcywXVXMr50+X0Q/Lsb43OQHYWRCY2AiWywWQ=
-github.com/kong/deck v1.61.0 h1:NID858kT49aYGItj/92KgepmuKJQefFaN+hFnBS6ZNk=
-github.com/kong/deck v1.61.0/go.mod h1:o724MU5GfnDpXs6QlzxO4oT8FdhzDfBBYceeDYMYt7g=
+github.com/kong/deck v1.62.0 h1:EJ9bxcbhy3oRayyT9Kam4SRRpc8iDVLMgA4WgATk19o=
+github.com/kong/deck v1.62.0/go.mod h1:L6NiEp9MC/taq+Ir/xOHWoMkgaWS/n/A9A7WT/SVUQ0=
 github.com/kong/go-database-reconciler v1.38.0 h1:KecRJLDRMrH/r/BTORQ17x4coZBOv8vKXTP/K9rlVzg=
 github.com/kong/go-database-reconciler v1.38.0/go.mod h1:4YhUoBTMO5smJ0BuWaSfxknbhjrKx9Cg4hvUMR2EW8M=
 github.com/kong/go-kong v0.75.1 h1:2W4bZQUvXYGsZ7PvbZKkWnjrZmEiKueSY1yf6xv2jwY=
